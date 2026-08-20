@@ -34,15 +34,15 @@ export default function InventoryPage() {
   if (!user) return (
     <div className="max-w-4xl mx-auto px-4 py-20 text-center">
       <Key size={48} className="mx-auto text-slate-600 mb-4" />
-      <h2 className="text-xl font-semibold text-slate-300 mb-2">Login Required</h2>
-      <p className="text-slate-500">Please log in to view your inventory.</p>
+      <h2 className="text-xl font-semibold text-slate-300 mb-2">ตองเขาสส ู ystem</h2>
+      <p className="text-slate-500">กรุณาเขาสส ู ystem เพอื่ ดูคลงั คียของคณุ </p>
     </div>
   );
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold neon-text mb-2">My Inventory</h1>
-      <p className="text-slate-400 text-sm mb-8">Your purchased license keys</p>
+      <h1 className="text-3xl font-bold neon-text mb-2">คลงั คียของฉ ัน</h1>
+      <p className="text-slate-400 text-sm mb-8">คียท ีคณุ เคยซอื้ ไป</p>
 
       {loading ? (
         <div className="space-y-4">
@@ -51,8 +51,8 @@ export default function InventoryPage() {
       ) : items.length === 0 ? (
         <div className="text-center py-20 text-slate-500">
           <Package size={48} className="mx-auto mb-4 opacity-50" />
-          <p className="mb-2">No purchases yet</p>
-          <p className="text-sm">Visit the store to buy your first script.</p>
+          <p className="mb-2">ยงั ไมม ีการซอื้ ครัง้ แรก</p>
+          <p className="text-sm">เขาไปท ีรานคาเพอื่ ซอื้ สคริปตอ ันแรกเลย</p>
         </div>
       ) : (
         <div className="space-y-4">
@@ -61,7 +61,7 @@ export default function InventoryPage() {
               <div className="flex-1">
                 <div className="text-xs text-cyan-400 font-mono mb-1">{item.game_category}</div>
                 <h3 className="text-slate-100 font-semibold">{item.product_name}</h3>
-                <div className="text-xs text-slate-500 mt-1 font-mono">{new Date(item.purchased_at).toLocaleDateString()} • ฿{item.price_paid.toFixed(2)}</div>
+                <div className="text-xs text-slate-500 mt-1 font-mono">{new Date(item.purchased_at).toLocaleDateString("th-TH")} • ฿{item.price_paid.toFixed(2)}</div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="px-3 py-2 bg-slate-950 rounded border border-slate-700 font-mono text-xs text-cyan-400 max-w-[200px] truncate">{item.key_code}</div>
