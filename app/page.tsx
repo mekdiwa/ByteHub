@@ -11,20 +11,19 @@ export default function HomePage() {
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-mono mb-6 neon-border">
             <Zap size={14} />
-            <span>Instant Delivery • 24/7 Support</span>
+            <span>สง่ คีย์ทนั ท ี • สนบั สนุน 24/7</span>
           </div>
 
           <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-6">
             <span className="neon-text">ByteHub</span>
             <br />
-            <span className="text-slate-100">The Ultimate Script</span>
+            <span className="text-slate-100">ตลาดสคริปต์</span>
             <br />
-            <span className="text-slate-100">& Key Marketplace</span>
+            <span className="text-slate-100">& คีย์อ ั นดบ ั 1</span>
           </h1>
 
           <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Premium Roblox scripts, exploits, and license keys delivered instantly.
-            Powered by blockchain-secure key management. Trusted by 10,000+ gamers.
+            สคริปต์ Roblox คณุ ภาพสงู สง่ คีย์ทนั ท ี หลกั สตู รปองก ั นการขโมย เชอื่ ถอื โดยเกมเมอรกวา่ 10,000 คน
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -32,14 +31,14 @@ export default function HomePage() {
               href="/store"
               className="flex items-center gap-2 px-8 py-3 text-slate-950 font-semibold bg-cyan-400 rounded-lg hover:bg-cyan-300 transition-all glow-cyan"
             >
-              Browse Store
+              เขาสรู านคา
               <ArrowRight size={18} />
             </Link>
             <Link
               href="/signup"
               className="px-8 py-3 text-slate-100 font-semibold bg-slate-800 border border-slate-700 rounded-lg hover:border-cyan-500/50 hover:text-cyan-400 transition-all"
             >
-              Create Account
+              สมครสมาชกิ
             </Link>
           </div>
         </div>
@@ -49,18 +48,18 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <FeatureCard
             icon={<Zap className="text-cyan-400" size={28} />}
-            title="Instant Delivery"
-            description="Keys are delivered automatically within milliseconds of purchase. No waiting."
+            title="สง่ คีย์ทนั ท ี"
+            description="คีย์จะถูกสง่ ใหอ ตั โนมต ั ยภายในมิลลิวินาท ี หลงั จากซอื้ สำเรจ็ ไมตองรอ"
           />
           <FeatureCard
             icon={<Shield className="text-purple-400" size={28} />}
-            title="Secure & Verified"
-            description="All scripts are tested and verified. Your data is protected with enterprise-grade encryption."
+            title="ปลอดภ ัย & ตรวจสอบแลว้"
+            description="สคริปต์ทกุ อ ั นผานการทดสอบแลว วา่ ปลอดภ ัย ขอมลู ของคณถู กปกปองดวยระบบระดบ ั องคก์ ร"
           />
           <FeatureCard
             icon={<Key className="text-cyan-400" size={28} />}
-            title="Lifetime Keys"
-            description="One purchase, forever access. Your keys are stored in your inventory permanently."
+            title="คีย์ตลอดชวี ติ"
+            description="ซอื้ ครัง้ เดยว ใชไ ้ ดต ั ลอดไป คียข ์ องคณถู กเกบ็ ไวใ ้ นคลงั อย่างถาวร"
           />
         </div>
       </section>
